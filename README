@@ -1,0 +1,25 @@
+
+Extraction of Noticeable Data from Google Ngram
+
+Different methods to extract interesting Data from Google Ngram
+
+Initializing
+
+To Initialize the tool, you must run the tool once, so it creates the necessary directories.
+Then you have to add the files from Google Ngram (http://storage.googleapis.com/books/ngrams/books/datasetsv2.html)
+into the NewFileInput-Directory (either in zipped or unzipped form). You do not have to
+add all files at the beginning, if you do not need them. Files can always be added at a
+later time. Run the tool again with '-import' as run-parameter to process the added files.
+
+Then you are free to start using the tool. For more information on the available commands 
+use the '-help' parameter. There are different modes and also different ways to calculate
+interesting points.
+
+Modes:
+
+-points(standard) calculates and prints the interesting points of all terms
+-similar calculates the interesting points of the first term and finds other terms 
+	with similar interesting points
+	in case more than one term are given calculates the similarity of all terms to
+	the first term
+-years finds all terms with interesting points at the given years 
